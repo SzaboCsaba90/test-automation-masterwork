@@ -1,0 +1,22 @@
+BaseTest.java
+ BaseTest
+Pages/ProductListPage.java
+ Pages.ProductListPage
+Pages/BasePage.java
+ Pages.BasePage
+PaginationTest.java
+ PaginationTest
+Pages/Logout.java
+ Pages.Logout
+Pages/LoginLogoutPage.java
+ Pages.LoginLogoutPage
+ListingDataTest.java
+ ListingDataTest
+RegisterPageTest.java
+ RegisterPageTest
+LoginLogoutPageTest.java
+ LoginLogoutPageTest
+Pages/RegisterPage.java
+ Pages.RegisterPage
+OpenPrivacyPolicyTest.java
+ OpenPrivacyPolicyTest
