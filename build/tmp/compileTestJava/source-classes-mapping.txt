@@ -1,22 +1,30 @@
-Pages/LoginLogoutPage.java
- Pages.LoginLogoutPage
-Pages/Logout.java
- Pages.Logout
-RegisterPageTest.java
- RegisterPageTest
-LoginLogoutPageTest.java
- LoginLogoutPageTest
-Pages/RegisterPage.java
- Pages.RegisterPage
 OpenPrivacyPolicyTest.java
  OpenPrivacyPolicyTest
-BaseTest.java
- BaseTest
-Pages/BasePage.java
- Pages.BasePage
-ListingDataTest.java
- ListingDataTest
+Pages/Logout.java
+ Pages.Logout
+LoginLogoutPageTest.java
+ LoginLogoutPageTest
 Pages/ProductListPage.java
  Pages.ProductListPage
+Pages/RegisterPage.java
+ Pages.RegisterPage
+BaseTest.java
+ BaseTest
+Pages/AddressBookPage.java
+ Pages.AddressBookPage
+Pages/BasePage.java
+ Pages.BasePage
+RegisterPageTest.java
+ RegisterPageTest
+ListingDataTest.java
+ ListingDataTest
 PaginationTest.java
  PaginationTest
+Pages/LoginLogoutPage.java
+ Pages.LoginLogoutPage
+Pages/MyAccountPage.java
+ Pages.MyAccountPage
+Pages/AddAddressPage.java
+ Pages.AddAddressPage
+NewDataInputTest.java
+ NewDataInputTest

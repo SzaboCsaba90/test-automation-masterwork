@@ -7,6 +7,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class LoginLogoutPage extends BasePage {
   private static String loginUrl = "http://test-automation-shop2.greenfox.academy/index.php?route=account/login";
   private static String logoutUrl = "http://test-automation-shop2.greenfox.academy/index.php?route=account/logout";
+
   public LoginLogoutPage(WebDriver driver) {
     super(driver, LoginLogoutPage.loginUrl);
   }

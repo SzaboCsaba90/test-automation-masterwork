@@ -1,3 +1,5 @@
+import Pages.LoginLogoutPage;
+import Pages.RegisterPage;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import java.io.IOException;
 import java.io.InputStream;
@@ -13,7 +15,20 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 public abstract class BaseTest {
-  WebDriver driver;
+  protected WebDriver driver;
+  protected String loginEmail;
+  protected String loginPassword;
+
+  public void createUser() {
+    String timestamp = "" + System.currentTimeMillis();
+    this.loginEmail = "test" + timestamp + "@test.com";
+    this.loginPassword = "12345";
+    RegisterPage registerPage = new RegisterPage(driver);
+    registerPage.open();
+    registerPage.registration("Peter", "Kovacs", this.loginEmail, "1234", this.loginPassword);
+    System.out.println(this.loginEmail + " has been created!");
+    LoginLogoutPage.logout(driver);
+  }
 
   @BeforeAll
   public void setUp() throws IOException {
@@ -34,11 +49,11 @@ public abstract class BaseTest {
       WebDriverManager.edgedriver().setup();
       this.driver = new EdgeDriver();
     }
+
   }
 
   @AfterEach
   public void teardown() {
     driver.quit();
   }
-
 }
