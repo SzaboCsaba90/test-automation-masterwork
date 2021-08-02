@@ -1,5 +1,6 @@
 package Pages;
 
+import java.util.ArrayList;
 import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -33,6 +34,10 @@ public class ProductListPage extends BasePage{
     return this.driver.findElement(By.xpath("//*[@id=\"content\"]/div[5]/div[1]/ul/li[4]/a"));
   }
 
+  public int getPageNumber() {
+    return Integer.parseInt(this.driver.findElement(By.className("pagination")).findElement(By.className("active")).getText());
+  }
+
   public void listDesktopProducts() {
     this.getDesktopsButton().click();
     this.getShowAllDesktops().click();
@@ -40,6 +45,14 @@ public class ProductListPage extends BasePage{
 
   public List<WebElement> getListedProducts() {
     return this.driver.findElements(By.className("product-thumb"));
+  }
+
+  public List<String> getListedProductNames() {
+    List<String> productNames = new ArrayList<String>();
+    for (WebElement product: this.getListedProducts()) {
+      productNames.add(product.findElement(By.tagName("h4")).getText());
+    }
+    return productNames;
   }
 
   public void sortByPrice() {

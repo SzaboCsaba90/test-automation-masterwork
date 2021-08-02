@@ -8,15 +8,15 @@ LoginLogoutPageTest.java
  LoginLogoutPageTest
 Pages/RegisterPage.java
  Pages.RegisterPage
-Pages/ProductListPage.java
- Pages.ProductListPage
+OpenPrivacyPolicyTest.java
+ OpenPrivacyPolicyTest
 BaseTest.java
  BaseTest
 Pages/BasePage.java
  Pages.BasePage
-PaginationTest.java
- PaginationTest
-OpenPrivacyPolicyTest.java
- OpenPrivacyPolicyTest
 ListingDataTest.java
  ListingDataTest
+Pages/ProductListPage.java
+ Pages.ProductListPage
+PaginationTest.java
+ PaginationTest
