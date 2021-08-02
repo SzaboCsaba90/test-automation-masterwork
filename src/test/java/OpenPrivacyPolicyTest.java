@@ -11,6 +11,7 @@ public class OpenPrivacyPolicyTest extends BaseTest {
 
   @Test
   public void shouldOpenPrivacyPolicy() {
+    //TC_03_01
     RegisterPage registerPage = PageFactory.initElements(driver, RegisterPage.class);
     registerPage.open();
     registerPage.getPrivacyPolicyLink().click();

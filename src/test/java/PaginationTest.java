@@ -8,7 +8,7 @@ public class PaginationTest extends BaseTest{
   public void shouldGoToNextPage() {
     ProductListPage productListPage = PageFactory.initElements(driver, ProductListPage.class);
     productListPage.open();
-    productListPage.listProducts();
+    productListPage.listDesktopProducts();
     productListPage.getNextPageButton().click();
   }
 }
