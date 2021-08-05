@@ -1,5 +1,4 @@
 package Pages;
-
 import java.util.ArrayList;
 import java.util.List;
 import org.openqa.selenium.By;
@@ -14,7 +13,6 @@ public class ProductListPage extends BasePage{
   public ProductListPage (WebDriver driver){
     super(driver, ProductListPage.productListUrl);
   }
-
 
   public WebElement getDesktopsButton() {
     return this.driver.findElement(By.xpath("//*[@id=\"menu\"]/div[2]/ul/li[1]/a"));

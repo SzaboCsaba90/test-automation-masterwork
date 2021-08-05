@@ -1,0 +1,4 @@
+firstname,lastname,company,address1,city,postcode,zone
+TestFirstname1,TestLastName1,TestCompany1,TestAddress1,TestCity1,1111,Aberdeen
+TestFirstname2,TestLastName2,TestCompany2,TestAddress2,TestCity2,2222,Bristol
+TestFirstname3,TestLastName3,TestCompany3,TestAddress3,TestCity3,3333,Angus

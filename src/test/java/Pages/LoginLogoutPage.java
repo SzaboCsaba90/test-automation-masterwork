@@ -1,8 +1,8 @@
 package Pages;
+import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 
 public class LoginLogoutPage extends BasePage {
   private static String loginUrl = "http://test-automation-shop2.greenfox.academy/index.php?route=account/login";
@@ -42,7 +42,30 @@ public class LoginLogoutPage extends BasePage {
     return false;
   }
 
-  public static void logout(WebDriver driver) {
+  public static void directLogout(WebDriver driver) {
     driver.get(LoginLogoutPage.logoutUrl);
+  }
+
+
+  public WebElement getLogoutButton() {
+    this.driver.findElement(By.className("fa-user")).click();
+    List<WebElement> buttons = this.driver.findElements(By.tagName("a"));
+    for (WebElement button: buttons) {
+      if (button.getText().equals("Logout")) {
+        return button;
+      }
+    }
+    return null;
+  }
+
+  public WebElement getAccountLogoutMessage() {
+    return this.driver.findElement(By.id("content")).findElement(By.tagName("h1"));
+  }
+
+  @Override
+  public void open(){
+    //Makes sure there is no logged in user
+    LoginLogoutPage.directLogout(this.driver);
+    super.open();
   }
 }

@@ -1,11 +1,17 @@
 import Pages.ProductListPage;
+import io.qameta.allure.Description;
+import io.qameta.allure.Feature;
 import java.util.List;
 import org.assertj.core.api.Assertions;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.support.PageFactory;
 
 public class PaginationTest extends BaseTest{
 
+  @DisplayName("Pagination")
+  @Description("Should list products in pages")
+  @Feature("Product list paging feature")
   @Test
   public void shouldGoToNextPage() {
     //TC_05_01

@@ -1,0 +1,221 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "DataInputTest",
+    "children" : [ {
+      "name" : "[1] TestFirstname1, TestLastName1, TestCompany1, TestAddress1, TestCity1, 1111, Aberdeen",
+      "uid" : "de609fcfec8d9404",
+      "parentUid" : "0cbcab31d985c5b04d7a5e58c5961a35",
+      "status" : "passed",
+      "time" : {
+        "start" : 1628190178885,
+        "stop" : 1628190182683,
+        "duration" : 3798
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "[2] TestFirstname2, TestLastName2, TestCompany2, TestAddress2, TestCity2, 2222, Bristol",
+      "uid" : "2c3d02a7e5cc12b",
+      "parentUid" : "0cbcab31d985c5b04d7a5e58c5961a35",
+      "status" : "passed",
+      "time" : {
+        "start" : 1628190182805,
+        "stop" : 1628190186289,
+        "duration" : 3484
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "[3] TestFirstname3, TestLastName3, TestCompany3, TestAddress3, TestCity3, 3333, Angus",
+      "uid" : "b01f568ec12b401f",
+      "parentUid" : "0cbcab31d985c5b04d7a5e58c5961a35",
+      "status" : "passed",
+      "time" : {
+        "start" : 1628190186293,
+        "stop" : 1628190189846,
+        "duration" : 3553
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Store new data",
+      "uid" : "3564c251ea8fddd5",
+      "parentUid" : "0cbcab31d985c5b04d7a5e58c5961a35",
+      "status" : "passed",
+      "time" : {
+        "start" : 1628190189850,
+        "stop" : 1628190193451,
+        "duration" : 3601
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "0cbcab31d985c5b04d7a5e58c5961a35"
+  }, {
+    "name" : "ListingDataTest",
+    "children" : [ {
+      "name" : "Listing data",
+      "uid" : "2e2f0bab498cfca3",
+      "parentUid" : "cd5cb1469eecce533caa8444b49f3a83",
+      "status" : "passed",
+      "time" : {
+        "start" : 1628190195249,
+        "stop" : 1628190197552,
+        "duration" : 2303
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "cd5cb1469eecce533caa8444b49f3a83"
+  }, {
+    "name" : "LoginPageTest",
+    "children" : [ {
+      "name" : "Fail to login user.",
+      "uid" : "3d5962613f802561",
+      "parentUid" : "4c02d1c299d33785fe93a09989ce5979",
+      "status" : "passed",
+      "time" : {
+        "start" : 1628190201249,
+        "stop" : 1628190201944,
+        "duration" : 695
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Successful user login.",
+      "uid" : "773eeea7ab1494cc",
+      "parentUid" : "4c02d1c299d33785fe93a09989ce5979",
+      "status" : "passed",
+      "time" : {
+        "start" : 1628190201946,
+        "stop" : 1628190202615,
+        "duration" : 669
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "4c02d1c299d33785fe93a09989ce5979"
+  }, {
+    "name" : "LogoutPageTest",
+    "children" : [ {
+      "name" : "Successful user logout.",
+      "uid" : "1fd87a082e6e72be",
+      "parentUid" : "95a649361bfb27cd597e7e1125554ec5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1628190206330,
+        "stop" : 1628190207472,
+        "duration" : 1142
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "95a649361bfb27cd597e7e1125554ec5"
+  }, {
+    "name" : "ModifyDataTest",
+    "children" : [ {
+      "name" : "Delete existing address",
+      "uid" : "a5e55da00d800c56",
+      "parentUid" : "f528ed6ef1d6d8bc63cfc5edf02914a2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1628190211239,
+        "stop" : 1628190218146,
+        "duration" : 6907
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Modify existing data",
+      "uid" : "6b979b0a2b90af01",
+      "parentUid" : "f528ed6ef1d6d8bc63cfc5edf02914a2",
+      "status" : "passed",
+      "time" : {
+        "start" : 1628190218148,
+        "stop" : 1628190222247,
+        "duration" : 4099
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "f528ed6ef1d6d8bc63cfc5edf02914a2"
+  }, {
+    "name" : "OpenPrivacyPolicyTest",
+    "children" : [ {
+      "name" : "Open Privacy Policy",
+      "uid" : "7be92022cf0d2db2",
+      "parentUid" : "963ffd1e762f78e314ea0b7a70349db6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1628190224026,
+        "stop" : 1628190226337,
+        "duration" : 2311
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "963ffd1e762f78e314ea0b7a70349db6"
+  }, {
+    "name" : "PaginationTest",
+    "children" : [ {
+      "name" : "Pagination",
+      "uid" : "9cd5ee4afab04007",
+      "parentUid" : "4a1c51ddfc94743777f2c0459e8887c3",
+      "status" : "passed",
+      "time" : {
+        "start" : 1628190228069,
+        "stop" : 1628190230089,
+        "duration" : 2020
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "4a1c51ddfc94743777f2c0459e8887c3"
+  }, {
+    "name" : "RegisterPageTest",
+    "children" : [ {
+      "name" : "Fails to register user",
+      "uid" : "2f457b50bc35a0e9",
+      "parentUid" : "9c5d36fac321f063fa5dd21790425058",
+      "status" : "passed",
+      "time" : {
+        "start" : 1628190231818,
+        "stop" : 1628190233448,
+        "duration" : 1630
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Successful user registration",
+      "uid" : "a8a7fb33f4a4bec6",
+      "parentUid" : "9c5d36fac321f063fa5dd21790425058",
+      "status" : "passed",
+      "time" : {
+        "start" : 1628190233451,
+        "stop" : 1628190234323,
+        "duration" : 872
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "9c5d36fac321f063fa5dd21790425058"
+  }, {
+    "name" : "SaveDataTest",
+    "children" : [ {
+      "name" : "Save products",
+      "uid" : "dc58af78e02f4a4f",
+      "parentUid" : "1be5a8581749c8b1d7769fe8d0bf9e75",
+      "status" : "passed",
+      "time" : {
+        "start" : 1628190236051,
+        "stop" : 1628190238438,
+        "duration" : 2387
+      },
+      "flaky" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "1be5a8581749c8b1d7769fe8d0bf9e75"
+  } ]
+}

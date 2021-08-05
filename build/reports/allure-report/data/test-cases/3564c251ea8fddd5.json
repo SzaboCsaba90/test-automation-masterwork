@@ -1,0 +1,54 @@
+{
+  "uid" : "3564c251ea8fddd5",
+  "name" : "Store new data",
+  "fullName" : "DataInputTest.shouldStoreNewAddress",
+  "historyId" : "72a9822a0fe12bc914b760763eaece91",
+  "time" : {
+    "start" : 1628190189850,
+    "stop" : 1628190193451,
+    "duration" : 3601
+  },
+  "description" : "Store new data in address menu",
+  "descriptionHtml" : "<p>Store new data in address menu</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Store data feature"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-6VB1U2K"
+  }, {
+    "name" : "thread",
+    "value" : "11796@DESKTOP-6VB1U2K.Test worker(12)"
+  }, {
+    "name" : "package",
+    "value" : "DataInputTest"
+  }, {
+    "name" : "testClass",
+    "value" : "DataInputTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "shouldStoreNewAddress"
+  }, {
+    "name" : "suite",
+    "value" : "DataInputTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "3564c251ea8fddd5.json",
+  "parameterValues" : [ ]
+}

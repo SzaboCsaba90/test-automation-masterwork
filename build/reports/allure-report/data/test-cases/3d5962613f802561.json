@@ -1,0 +1,54 @@
+{
+  "uid" : "3d5962613f802561",
+  "name" : "Fail to login user.",
+  "fullName" : "LoginPageTest.shouldFailToLoginUser",
+  "historyId" : "6e46cffa5ef7a5c8fa5d48bc6cb8ec09",
+  "time" : {
+    "start" : 1628190201249,
+    "stop" : 1628190201944,
+    "duration" : 695
+  },
+  "description" : "Should fail to login user with incorrect email address.",
+  "descriptionHtml" : "<p>Should fail to login user with incorrect email address.</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Login feature"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-6VB1U2K"
+  }, {
+    "name" : "thread",
+    "value" : "11796@DESKTOP-6VB1U2K.Test worker(12)"
+  }, {
+    "name" : "package",
+    "value" : "LoginPageTest"
+  }, {
+    "name" : "testClass",
+    "value" : "LoginPageTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "shouldFailToLoginUser"
+  }, {
+    "name" : "suite",
+    "value" : "LoginPageTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "3d5962613f802561.json",
+  "parameterValues" : [ ]
+}

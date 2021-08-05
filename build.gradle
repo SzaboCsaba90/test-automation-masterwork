@@ -1,5 +1,7 @@
 plugins {
     id 'java'
+    id "io.qameta.allure" version "2.8.1"
+
 }
 
 group 'org.example'
@@ -20,4 +22,13 @@ dependencies {
 
 test {
     useJUnitPlatform()
+}
+
+allure {
+    autoconfigure = true
+    version = "2.8.1"
+
+    useJUnit5 {
+        version = '2.8.1'
+    }
 }

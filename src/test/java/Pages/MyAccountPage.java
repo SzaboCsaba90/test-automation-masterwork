@@ -10,6 +10,7 @@ public class MyAccountPage extends BasePage{
   public MyAccountPage(WebDriver driver) {
     super(driver, MyAccountPage.myAccountUrl);
   }
+
   public WebElement getAddressBook() {
     for (WebElement link: driver.findElements(By.tagName("a"))) {
       if (link.getText().equals("Modify your address book entries")) {

@@ -1,0 +1,54 @@
+{
+  "uid" : "2c3d02a7e5cc12b",
+  "name" : "[2] TestFirstname2, TestLastName2, TestCompany2, TestAddress2, TestCity2, 2222, Bristol",
+  "fullName" : "DataInputTest.shouldStoreMultipleAddresses",
+  "historyId" : "c08ff7be49d1ebc1ae62f0b067c914de",
+  "time" : {
+    "start" : 1628190182805,
+    "stop" : 1628190186289,
+    "duration" : 3484
+  },
+  "description" : "Should save new addresses from addresses.csv file",
+  "descriptionHtml" : "<p>Should save new addresses from addresses.csv file</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "Save addresses feature"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-6VB1U2K"
+  }, {
+    "name" : "thread",
+    "value" : "11796@DESKTOP-6VB1U2K.Test worker(12)"
+  }, {
+    "name" : "package",
+    "value" : "DataInputTest"
+  }, {
+    "name" : "testClass",
+    "value" : "DataInputTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "shouldStoreMultipleAddresses"
+  }, {
+    "name" : "suite",
+    "value" : "DataInputTest"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "2c3d02a7e5cc12b.json",
+  "parameterValues" : [ ]
+}
