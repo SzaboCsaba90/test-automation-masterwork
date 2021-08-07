@@ -11,7 +11,7 @@ import org.openqa.selenium.support.PageFactory;
 public class LogoutPageTest extends BaseTest{
 
   @BeforeAll
-  public void loginSetUp() {
+  public void logoutSetUp() {
     this.createUser();
   }
 

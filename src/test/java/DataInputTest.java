@@ -40,7 +40,8 @@ public class DataInputTest extends BaseTest{
     this.addNewAddress(addAddressPage, inputFields);
 
     String expectedAddress = inputFields.get("firstname") + " " + inputFields.get("lastname") + "\n" +  inputFields.get("company") + "\n" + inputFields.get("address-1") + "\n" + inputFields.get("city") + " " + inputFields.get("postcode") + "\n" + inputFields.get("zone") + "\nUnited Kingdom";
-    Assertions.assertThat(addAddressPage.getLastAddressBookEntry().getText().equals(expectedAddress)).isTrue();
+    String actualAddress = addAddressPage.getLastAddressBookEntry().getText();
+    Assertions.assertThat(actualAddress).isEqualTo(expectedAddress);
   }
 
   @DisplayName("Multiple data inputs")
@@ -48,7 +49,7 @@ public class DataInputTest extends BaseTest{
   @Feature("Save addresses feature")
   @ParameterizedTest
   @CsvFileSource(resources = "addresses.csv", numLinesToSkip = 1)
-  public void shouldStoreMultipleAddresses(String firstname, String lastname, String company, String address1, String city, String postcode, String zone) {
+  public void shouldStoreMultipleAddresses(String firstname, String lastname, String company, String address1, String city, String postcode, String zone) throws InterruptedException {
     // TC_07_01
     LoginLogoutPage loginLogoutPage = PageFactory.initElements(driver, LoginLogoutPage.class);
     loginLogoutPage.open();
@@ -72,6 +73,7 @@ public class DataInputTest extends BaseTest{
     addAddressPage.getContinueButton().click();
 
     String expectedAddress = firstname + " " + lastname + "\n" +  company + "\n" + address1 + "\n" + city + " " + postcode + "\n" + zone + "\nUnited Kingdom";
-    Assertions.assertThat(addAddressPage.getLastAddressBookEntry().getText().equals(expectedAddress)).isTrue();
+    String actualAddress = addAddressPage.getLastAddressBookEntry().getText();
+    Assertions.assertThat(actualAddress).isEqualTo(expectedAddress);
   }
 }

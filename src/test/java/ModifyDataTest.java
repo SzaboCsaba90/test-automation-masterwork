@@ -2,10 +2,13 @@ import Pages.AddAddressPage;
 import io.qameta.allure.Description;
 import io.qameta.allure.Feature;
 import java.util.HashMap;
+import java.util.List;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 
 public class ModifyDataTest extends BaseTest {
@@ -44,7 +47,8 @@ public class ModifyDataTest extends BaseTest {
     addAddressPage.getContinueButton().click();
 
     String expectedAddress = firstnameAfter + " " + inputFields.get("lastname") + "\n" +  inputFields.get("company") + "\n" + inputFields.get("address-1") + "\n" + inputFields.get("city") + " " + inputFields.get("postcode") + "\n" + inputFields.get("zone") + "\nUnited Kingdom";
-    Assertions.assertThat(addAddressPage.getLastAddressBookEntry().getText().equals(expectedAddress)).isTrue();
+    String actualAddress = addAddressPage.getLastAddressBookEntry().getText();
+    Assertions.assertThat(actualAddress.equals(expectedAddress)).isTrue();
 
   }
   @DisplayName("Delete existing address")
@@ -73,13 +77,17 @@ public class ModifyDataTest extends BaseTest {
     inputFields2.put("postcode", "Test");
     inputFields2.put("zone", "Aberdeen");
 
+    // need to add two addresses as first (default) address cannot be deleted
     this.addNewAddress(addAddressPage, inputFields1);
     this.addNewAddress(addAddressPage, inputFields2);
 
     addAddressPage.getLastAddressBookDeleteButton().click();
 
+    //Assert that latest address (inputFields2) is deleted.
     String notExpectedAddress = inputFields2.get("firstname") + " " + inputFields2.get("lastname") + "\n" +  inputFields2.get("company") + "\n" + inputFields2.get("address-1") + "\n" + inputFields2.get("city") + " " + inputFields2.get("postcode") + "\n" + inputFields2.get("zone") + "\nUnited Kingdom";
-    Assertions.assertThat(addAddressPage.getLastAddressBookEntry().getText().equals(notExpectedAddress)).isFalse();
+    List<WebElement> addresses = this.driver.findElements(By.cssSelector(".table-responsive td"));
+    String actualAddress = addresses.get(addresses.size() - 2).getText();
+    Assertions.assertThat(actualAddress).isNotEqualTo(notExpectedAddress);
 
   }
 

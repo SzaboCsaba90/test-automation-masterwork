@@ -22,7 +22,7 @@ public abstract class BaseTest {
   protected WebDriver driver;
   protected String loginEmail;
   protected String loginPassword;
-
+  //setsup the driver
   @BeforeAll
   public void setUp() throws IOException {
     String browser;
@@ -54,9 +54,11 @@ public abstract class BaseTest {
     LoginLogoutPage loginLogoutPage = PageFactory.initElements(driver, LoginLogoutPage.class);
     loginLogoutPage.open();
     loginLogoutPage.login(this.loginEmail, this.loginPassword);
+
     MyAccountPage myAccountPage = PageFactory.initElements(driver,MyAccountPage.class);
     myAccountPage.open();
     myAccountPage.getAddressBook().click();
+
     AddressBookPage addressBookPage = PageFactory.initElements(driver, AddressBookPage.class);
     addressBookPage.getNewAddressButton().click();
 

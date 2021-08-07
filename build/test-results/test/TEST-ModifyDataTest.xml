@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ModifyDataTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-08-05T19:03:31" hostname="DESKTOP-6VB1U2K" time="11.009">
+<testsuite name="ModifyDataTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2021-08-07T17:12:24" hostname="DESKTOP-6VB1U2K" time="11.355">
   <properties/>
-  <testcase name="Delete existing address" classname="ModifyDataTest" time="6.908"/>
-  <testcase name="Modify existing data" classname="ModifyDataTest" time="4.1"/>
-  <system-out><![CDATA[test1628190209270@test.com has been created!
+  <testcase name="Delete existing address" classname="ModifyDataTest" time="7.076"/>
+  <testcase name="Modify existing data" classname="ModifyDataTest" time="4.278"/>
+  <system-out><![CDATA[test1628356342037@test.com has been created!
 ]]></system-out>
-  <system-err><![CDATA[Starting ChromeDriver 92.0.4515.107 (87a818b10553a07434ea9e2b6dccf3cbe7895134-refs/branch-heads/4515@{#1634}) on port 43370
+  <system-err><![CDATA[Starting ChromeDriver 92.0.4515.107 (87a818b10553a07434ea9e2b6dccf3cbe7895134-refs/branch-heads/4515@{#1634}) on port 45743
 Only local connections are allowed.
 Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
 ChromeDriver was started successfully.
-Aug 05, 2021 9:03:29 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+Aug 07, 2021 7:12:22 PM org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: W3C
-Aug 05, 2021 9:03:29 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Aug 07, 2021 7:12:22 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find an exact match for CDP version 92, so returning the closest version found: 91
-Aug 05, 2021 9:03:29 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+Aug 07, 2021 7:12:22 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 INFO: Found CDP implementation for version 92 of 91
 ]]></system-err>
 </testsuite>
